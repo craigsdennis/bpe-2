@@ -33,6 +33,12 @@ const OPTIONS = [
       events: z.array(EventSchema),
     }),
   },
+  {
+    name: "Poster",
+    schema: z.objecct({
+      description: z.string().meta({description: "What is going on in this poster?"})
+    })
+  }
 ];
 
 app.get("/api/schemas", async (c) => {
