@@ -35,7 +35,7 @@ const OPTIONS = [
   },
   {
     name: "Poster",
-    schema: z.objecct({
+    schema: z.object({
       description: z.string().meta({description: "What is going on in this poster?"})
     })
   }
